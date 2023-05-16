@@ -2,7 +2,7 @@
 
 body {
   margin: 0;
-  max-height: 100vh;
+  overflow: hidden;
 }
 
 h1 {
@@ -71,17 +71,16 @@ h1 {
   align-items: center;
   justify-content: center;
   text-align: center;
-
+  margin: 15px;
 }
 
 .center {
+  width: calc(100% - 510px);
+  height: calc(100vh - 210px);
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
-  justify-content: flex-start;
-  align-content: flex-start;
+  justify-content: center;
   overflow: hidden;
-  max-height: calc(100vh - 150px);
   margin: 30px;
-  justify-content: space-between
+  align-content: center;
 }
